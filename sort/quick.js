@@ -1,3 +1,16 @@
+/*
+the key for quicksort is partition based on a pivot
+in here, the pivot is taken from the middle of the array
+the idea is that the value < pivot will be placed on its left
+and the value > pivot will be placed on its right
+
+the initial partition will return the index of the pivot
+and then performing recursion to split the array based
+on the pivot previous pivot location
+
+in a sense, the process is the opposite of the merge sort
+*/
+
 function partition(arr, left, right){
     let pivot = arr[Math.floor((right+left)/2)]
     let i = left
